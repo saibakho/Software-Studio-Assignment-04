@@ -4,20 +4,23 @@ Software Stujardio 2017 Spring Assignment 04
 
 2. Program Structure :
 
-	PokemonCatcher - BGPanel - pokemon1
-							 - pokemon2 (PokemonLabel) - counter
-							 						   - freq (frequency of the pop-ups)
-							 						   - lastTime (lasting time of showing the pokemon)
-							 						   - pokemonId
-							 						   - state
-							 - ...
-							 - msgLabel (0) : Message Labels moving above caught Pokemons
-							 - msgLabel (1)
-							 - ...
-							 - scoreLabel
-				   - HashMap < PokemonLabel, msgLabel >
-				   - GameThread (the thread to count the counter)
-				   - score
+	PokemonCatcher
+		- BGPanel
+			- pokemon1
+			- pokemon2 (PokemonLabel)
+				- counter
+				- freq (frequency of the pop-ups)
+				- lastTime (lasting time of showing the pokemon)
+				- pokemonId
+				- state
+			- ...
+			- msgLabel (0) : Message Labels moving above caught Pokemons
+			- msgLabel (1)
+			- ...
+			- scoreLabel
+		- HashMap < PokemonLabel, msgLabel >
+		- GameThread (the thread to count the counter)
+		- score
 
 	About the gaming :
 		Pokemons :
